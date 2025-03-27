@@ -16,18 +16,12 @@ function weather() {
       document.getElementById("demo").innerHTML = "";
     }
   }
-  
-  //  } else if (unit === "F") {
-  //   if (degree > 86) {
-  //        document.getElementById("demo").innerHTML = "Hot";
-  //   } else if (degree > 68) {
-  //        document.getElementById("demo").innerHTML = "Warm";
-  //   } else if (degree > 50) {
-  //        document.getElementById("demo").innerHTML = "Mild";
-  //   } else if (degree > 32) {
-  //        document.getElementById("demo").innerHTML = "Cold";
-  //   } else {
-  //        document.getElementById("demo").innerHTML = "Freezing";
-  //   }
-  // }
 
+  const numbers = [40, 100, 1, 5, 25, 10];
+   numbers.sort(function(a, b){return a - b});
+   
+
+   var alphabetic = ["B", "O", "A", "M" , "K"];   
+   alphabetic.sort();
+
+   console.log(alphabetic)
