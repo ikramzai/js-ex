@@ -1,28 +1,33 @@
-function weather(degree, unit = "C") {
-  if (unit === "C") {
+function weather() {
+  let degree = document.getElementById('input').value ;
     if (degree > 30) {
-      return "Hot";
+     document.getElementById("demo").innerHTML = "Hot 🔥";
     } else if (degree > 20) {
-      return "Warm";
+      document.getElementById("demo").innerHTML = "Warm 🌞";
     } else if (degree > 10) {
-      return "Mild";
+      document.getElementById("demo").innerHTML = "Mild 😶‍🌫️";
     } else if (degree > 0) {
-      return "Cold";
-    } else {
-      return "Freezing";
+      document.getElementById("demo").innerHTML = "Cold 🥶";
+    } 
+   else if (degree < -1) {
+    document.getElementById("demo").innerHTML = "Freezing 🧊";
     }
-  } else if (unit === "F") {
-    if (degree > 86) {
-      return "Hot";
-    } else if (degree > 68) {
-      return "Warm";
-    } else if (degree > 50) {
-      return "Mild";
-    } else if (degree > 32) {
-      return "Cold";
-    } else {
-      return "Freezing";
+  else {
+      document.getElementById("demo").innerHTML = "";
     }
   }
-}
-console.log(weather(10, 'F'));
+  
+  //  } else if (unit === "F") {
+  //   if (degree > 86) {
+  //        document.getElementById("demo").innerHTML = "Hot";
+  //   } else if (degree > 68) {
+  //        document.getElementById("demo").innerHTML = "Warm";
+  //   } else if (degree > 50) {
+  //        document.getElementById("demo").innerHTML = "Mild";
+  //   } else if (degree > 32) {
+  //        document.getElementById("demo").innerHTML = "Cold";
+  //   } else {
+  //        document.getElementById("demo").innerHTML = "Freezing";
+  //   }
+  // }
+
